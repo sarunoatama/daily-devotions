@@ -1,0 +1,310 @@
+@charset "utf-8";
+/* site wide css */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: transparent url(/im/bg.jpg) repeat top center;
+}
+body, p, td, div, th, li, input, textarea {
+  font: 12px/16px Verdana, Helvetica, sans-serif;
+}
+p {
+  margin: 0 0 18px 0;
+  padding: 0;
+}
+h1 {
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0 0 22px 0;
+  padding: 0;
+  font-weight: normal;
+}
+h2 {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0 0 5px 0;
+  padding: 0;
+  font-weight: normal;
+}
+h3 {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 0;
+}
+h3.highlight {
+  background-color: #336699;
+  color: #FFF;
+  font-weight: bold;
+  padding: 2px 5px 2px 5px;
+  margin-top: 9px;
+  margin-right: -5px;
+  margin-bottom: 9px;
+  margin-left: -5px;
+}
+h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+/* IE7 */
+*:first-child+html h3.highlight {
+  zoom: 1;
+  position: relative;
+}
+/* <= IE6 */
+* html h3.highlight {
+  zoom: 1;
+  position: relative;
+}
+a:link, a:visited {
+  color: #006699;
+}
+a:hover, a:active {
+  color: #0066FF;
+  text-decoration: none;
+}
+ul, ol {
+  margin: 0;
+  padding: 0 0 18px 26px;
+}
+ul ul, ol ol, ul ol, ol ul {
+  padding-bottom: 0;
+}
+li {
+  padding-bottom: 6px;
+}
+ul.double_space li, ol.double_space li {
+  padding-bottom: 18px;
+}
+img {
+  border: 0;
+}
+td {
+  vertical-align: top; /* special case for this attribute */
+}
+.two_column_width { /* (usable width - column spacing / 2) = (710 - 20) = 345 */
+  width: 345px;
+}
+.column_spacing_width {
+  width: 20px;
+}
+.green, a.green {
+  color: #0B0;
+}
+.red, a.red {
+  color: #E00;
+}
+.blue, a.blue {
+  color: #3A709A;
+}
+.orange, a.orange {
+  color: #FFA346;
+}
+.white, a.white {
+  color: #ffffff;
+}
+.black {
+  color: #000000;
+}
+.bold {
+  font-weight: bold;
+}
+.float_r {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+.float_l {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.justify {
+  text-align: justify;
+}
+.clear_floats {
+  clear: both;
+  height: 1px;
+  font-size: 1px;
+  line-height: 1px;
+}
+.center {
+  text-align: center;
+}
+.center_block {
+  margin-left: auto;
+  margin-right: auto;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+p.no_margin {
+  margin-bottom: 4px;
+}
+.small {
+  font-size: 11px;
+  line-height: 13px;
+}
+.smallest {
+  font-size: 10px;
+  line-height: 12px;
+}
+/* layout width */
+/* don't put margin here */
+#header, #nav, #nav_c, #main, #footer {
+  width: 902px;
+  background-color: #FFF;
+}
+#page {
+  position: relative;
+	background: transparent url(/im/bg_shadow.png) repeat-y top center;
+  text-align: center;
+}
+/* <= IE6 */
+* html #page {
+  background-image: none;
+}
+#header {
+  margin: 0 auto 0 auto;
+  padding: 0;
+	height: 125px;
+}
+#nav {
+  position: relative; /* IE6 */
+  margin: 0 auto 0 auto;
+  padding: 0 0 0 0;
+  height: 51px;
+  z-index: 10000;
+  list-style: none;
+}
+.nav {
+  position: relative;
+  display: inline;
+  float: left;
+  margin: 0; 
+  padding: 0;  
+  z-index: 10001;
+}
+#nav_c {
+  position: relative;
+  margin: 0 auto 0 auto;
+	height: 12px;
+}
+/* <= IE6 */
+#nav_c {
+  z-index: 10002;
+}
+#nav_b {
+  position: relative;
+  top: -4px;
+  left: 0;
+}
+#main {
+  margin: 0 auto 0 auto;
+  width: 902px;
+  background-color: #FFF;
+  position: relative;
+  text-align: left;
+}
+#content {
+  padding: 30px 40px 30px 40px;
+	min-height: 300px;
+}
+#split {
+  background: transparent url(/im/split.png) repeat-y top center;
+}
+#sidebar {
+  padding: 7px 7px 7px 7px;
+	text-align: center;
+}
+#footer {
+  margin: 0 auto 0 auto;
+	padding: 30px 0 30px 0;
+  font-size: 11px;
+  text-align: center;
+}
+.grid_border {
+  border-collapse: collapse;
+}
+.grid_border td {
+  padding: 2px;
+  border: 1px solid #CCCCCC;
+}
+.center_vertical {
+  vertical-align: middle;
+}
+table.center_vertical {
+  vertical-align: inherit;
+}
+table.center_vertical td, table.center_vertical img {
+  vertical-align: middle;
+}
+.indent {
+  margin-left: 20px;
+}
+.indent_indent {
+  margin-left: 40px;
+}
+.box_border {
+  background-color: #FFF;
+  margin: 0 auto;
+  border: #CCC solid 1px;
+}
+.box_border_l {
+  float: left;
+  background-color: #FFF;
+  margin: 0 5px 5px 0;
+  border: #333 solid 1px;
+}
+.box_border_r {
+  float: right;
+  background-color: #FFF;
+  margin: 0 0 5px 5px;
+  border: #333 solid 1px;
+}
+
+.devo p {
+  text-align: justify;
+  font-family: "Times New Roman, serif";
+  font-size: 12pt;
+  line-height: 14pt;
+  margin-top: 0in;
+  margin-bottom: 0in;
+  padding-top: 0in;
+  padding-bottom: 0in;
+  page-break-inside: auto;
+}
+.devo p.indent, .devo p.comment {
+  text-indent: 0.2in;
+	margin-left: 0;
+  page-break-inside: auto;
+}
+.devo p.blankline {
+  page-break-before: avoid;
+}
+.devo h1 {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 12pt;
+  line-height: 14pt;
+  font-weight: bold;
+  margin-top: 0in;
+  margin-bottom: 6pt;
+  padding-top: 0in;
+  padding-bottom: 0in;
+  page-break-after: avoid;
+}
+.devo sup {
+  vertical-align: 5pt;
+  font-size: 6pt;
+  line-height: 6pt;
+}
+.devo div.part {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 11pt;
+  line-height: 13pt;
+  font-weight: bold;
+  float: right;
+}

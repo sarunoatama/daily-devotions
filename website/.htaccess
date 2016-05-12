@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule ^devotions/(..)-(..)\.html /devotions.php?month=$1&day=$2 [L]
+RewriteRule ^index.html /index.php [L]

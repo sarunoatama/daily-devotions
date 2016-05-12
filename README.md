@@ -10,7 +10,7 @@ Tasks
   * Word to html - stripped of all MS markup; only basic formatting left
   * html to daily html snippets - see ./website/fixed for snippet formatting
   * html to pdf - this is so that if edits are made a new pdf can be easily be generated from the html
-  * html to html - this is for converting the html to a format the Bible app will accept
+  * html to Bible app html - this is for converting the html to a format the Bible app will accept
 * New Email Delivery Provider
   * Find provider that can meet the goals below
   * Setup an account with provider (Get Response?) (should be cheaper if we get non-profit pricing)
