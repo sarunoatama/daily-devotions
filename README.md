@@ -7,7 +7,7 @@ Contents
 
 Tasks
 * Scripts
-  * Word to html - stripped of all MS markup; only basic formatting left
+  * Word to html - stripped of all MS markup; only basic formatting left; this may simply be a "save as"
   * html to daily html snippets - see ./website/fixed for snippet formatting
   * html to pdf - this is so that if edits are made a new pdf can be easily be generated from the html
   * html to Bible app html - this is for converting the html to a format the Bible app will accept
@@ -21,3 +21,7 @@ Tasks
     * User alters what day they are on
     * User unsubscribes
     * Automated sending of current days devotions for all users
+* Website
+  * Create new versions of index.php and devotions* files
+  * Add new video (alter navigation bar?)
+  * Update book purchasing page
